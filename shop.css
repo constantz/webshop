@@ -1,0 +1,26 @@
+ header {
+    font-size: 1.5em;
+    font-family: impact;
+    color: white;
+    background: green;
+    text-align: center;
+    padding: 1em;
+ }
+ 
+ h1 {
+    font-family: impact;
+ }
+
+ h2 {
+   font-family: impact;
+}
+
+ li {
+
+}
+
+button {
+   background: green;
+   color: white;
+   padding: 10px 20px;
+}

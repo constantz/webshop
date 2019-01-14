@@ -5,7 +5,7 @@ try {
 
     $statement = $conn->query("SELECT * FROM producten"); 
     while ($row = $statement->fetch()) {
-        echo "<LI>" . $row['naam'] . " : " . $row['prijs'] . "</LI>";
+        echo "<LI>" . $row['naam'] . " : " . $row['prijs'] . "<a href='dbproductverwijderen.php?id=" . $row['id'] . "'><button>Verwijder</button></a></LI>";
     }
 }
 

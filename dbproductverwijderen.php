@@ -1,5 +1,5 @@
 <?php
-$id = $_POST['id'];  
+$id = $_GET['id'];  
 try {
     $conn = new PDO("mysql:host=localhost;dbname=webshopdb", "root", ""); 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -18,5 +18,7 @@ catch(PDOException $e) {
 }
 
 $conn = NULL;
+
+header("Location: index.php");
 
 ?>
