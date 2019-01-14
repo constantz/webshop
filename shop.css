@@ -14,13 +14,26 @@
  h2 {
    font-family: impact;
 }
+ 
+#artList ul {
+   background: red;
+   list-style-type: none;
+}
+ #artList li {
+    background: red;
+    padding: 10px;
+    
+}
 
- li {
-
+#artList li:hover{
+   background: yellow;
 }
 
 button {
+   border: none;
+   float: right;
    background: green;
    color: white;
-   padding: 10px 20px;
+   padding: 5px 20px;
+   margin-left: 10px;
 }

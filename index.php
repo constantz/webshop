@@ -16,12 +16,14 @@
 
 
         </ul>
+        <div id="artList">
         <h2>Artikellijst</h2>
         <ul>
             <?php
                 include 'toonproducten.php';
             ?>
         </ul>
+        </div>
         </div>
     </body>
 </html>
