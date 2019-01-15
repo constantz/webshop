@@ -30,15 +30,36 @@
     
 }
 
+.zoekveld {
+   position: relative;
+   float: right;
+}
 .searchBox {
    padding: 10px;
 }
 
+#verborgenzoekveld {
+   visibility: hidden;
+   display: none;
+}
 .searchBoxBtn {
    border: none;
-   background: #009432;
+   background: #EA2027;
    color: white;
 }
+
+.searchBoxBtn:hover {
+   background: navy;
+   font-weight: bold;
+}
+#orderBtn {
+   background: green;
+}
+
+#orderBtn:hover {
+   background: navy;
+}
+
 #artList li:hover{
    background: #F79F1F;
 }
@@ -50,4 +71,9 @@ button {
    color: white;
    padding: 5px 20px;
    margin-left: 10px;
+}
+
+button:hover{
+   background: #006266;
+   font-weight: bold;
 }

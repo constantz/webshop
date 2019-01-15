@@ -1,6 +1,6 @@
-<form class="searchBox">
+<form class="searchBox" id="verborgenzoekveld">
     <input  name="naamfilter" placeholder="Naam bevat...">
-    <input  class=searchBoxBtn type="submit" value="Filter"></input>
+    <input  class=searchBoxBtn type="submit" value="Filter">
 </form>
 
 <?php
@@ -18,8 +18,10 @@ try {
     $statement = $conn->query("SELECT * FROM producten WHERE naam LIKE '%$naamfilter%'"); 
     while ($row = $statement->fetch()) {
         echo "<LI>" . $row['naam'] . " : " . $row['prijs'];
+        
         echo "<a href='dbproductverwijderen.php?id=" . $row['id'] . "'><button>Verwijder</button></a>";
-        echo "<a href='productupdate.php?id=" . $row['id'] . "'><button>Wijzigen</button></a></LI>";
+        echo "<a href='productupdate.php?id=" . $row['id'] . "'><button>Wijzigen</button></a>";
+        echo "<a href='bestellingtoevoegen.php?id=" . $row['id'] . "'><button id='orderBtn'>Bestel</button></a></LI>";
         echo "</LI>";
     }
 }
