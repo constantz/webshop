@@ -2,11 +2,15 @@
     font-size: 1.5em;
     font-family: impact;
     color: white;
-    background: green;
+    background: #009432;
     text-align: center;
     padding: 1em;
  }
  
+ body {
+    font-family: Tahoma, Geneva, sans-serif;
+ }
+
  h1 {
     font-family: impact;
  }
@@ -16,23 +20,33 @@
 }
  
 #artList ul {
-   background: red;
+   background: #EA2027 ;
    list-style-type: none;
+   padding: 0;
 }
  #artList li {
-    background: red;
+    background: #EA2027;
     padding: 10px;
     
 }
 
+.searchBox {
+   padding: 10px;
+}
+
+.searchBoxBtn {
+   border: none;
+   background: #009432;
+   color: white;
+}
 #artList li:hover{
-   background: yellow;
+   background: #F79F1F;
 }
 
 button {
    border: none;
    float: right;
-   background: green;
+   background: #009432;
    color: white;
    padding: 5px 20px;
    margin-left: 10px;

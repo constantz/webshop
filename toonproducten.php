@@ -1,6 +1,6 @@
-<form>
+<form class="searchBox">
     <input  name="naamfilter" placeholder="Naam bevat...">
-    <input type="submit" value="Filter"></input>
+    <input  class=searchBoxBtn type="submit" value="Filter"></input>
 </form>
 
 <?php

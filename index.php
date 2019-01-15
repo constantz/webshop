@@ -1,3 +1,7 @@
+<!-- <?php
+    include("navbar.php");
+?>     -->
+
 <html>
     <head>
         <link rel="stylesheet" href="shop.css">
@@ -10,7 +14,7 @@
         <h1>Welkom bij mijn shop</h1>
 
         <ul>
-            <li><a href="producttoevoegen.html">Product toevoegen</a></li>
+            <li><a href="producttoevoegen.html">Produkt toevoegen</a></li>
             <li>Menu item</li>
             <li>Menu item</li>
 
